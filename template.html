@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Resume</title>
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <style>
+        .actions-bar { margin-bottom: 2rem; text-align: right; }
+        .download-btn { background-color: #0076d6; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 4px; font-weight: bold; }
+        @media print { .actions-bar { display: none; } }
+    </style>
+</head>
+<body>
+    <div class="actions-bar">
+        <!-- Points to the PDF generated automatically during the build step -->
+        <a href="resume.pdf" class="download-btn" download>Download PDF Copy</a>
+    </div>
+    <main>
+        $body$
+    </main>
+</body>
+</html>
