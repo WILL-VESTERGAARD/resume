@@ -15,32 +15,32 @@ cv:
 
   sections:
     employment_history:
-      - title: Junior Mechatronics Engineer
-        company: Cubescape Pty Ltd
+      - company: Cubescape Pty Ltd
+        position: Junior Mechatronics Engineer
         location: Collingwood, Victoria
         start_date: 2024-10
         end_date: 2026-02
         highlights:
           - "Hands-on responsibility for the full project cycle of automated theatrical installations: conception, design, fabrication, testing, commissioning, and delivery."
 
-      - title: Skillaroo - Mechatronics (Competitor for Team Australia 'Skillaroos')
-        company: WorldSkills Australia, Festo Didactic
+      - company: WorldSkills Australia, Festo Didactic
+        position: Skillaroo - Mechatronics (Competitor for Team Australia 'Skillaroos')
         location: Hybrid / Melbourne, Victoria
         start_date: 2023-09
         end_date: 2024-10
         highlights:
           - "Awarded *'Best in Nation'* at National Skills Competition and *'Skill Champion'* at WorldSkills Competition Lyon in *Skill 04 - Mechatronics* (PLC Programming)."
 
-      - title: Technician - Development & Assembly (Hardware Development and Electronic Assembly)
-        company: Elektrika Pty Ltd (Cremorne Facility)
+      - company: Elektrika Pty Ltd (Cremorne Facility)
+        position: Technician - Development & Assembly (Hardware Development and Electronic Assembly)
         location: Richmond, Victoria
         start_date: 2022-11
         end_date: 2024-09
         highlights:
           - "Hardware and Software development of products and testing apparatus, incl. quality assessment, electrical debugging and programming."
 
-      - title: Technician - Maintenance (Facilities and Systems Maintenance)
-        company: Merlin Entertainments (Legoland Discovery Centre)
+      - company: Merlin Entertainments (Legoland Discovery Centre)
+        position: Technician - Maintenance (Facilities and Systems Maintenance)
         location: Chadstone, Victoria
         start_date: 2022-01
         end_date: 2023-01
@@ -83,11 +83,10 @@ cv:
 
 design:
   theme: engineeringresumes
-  page:
-    size: a4
-    top_margin: 1.5cm
-    bottom_margin: 1.5cm
-    left_margin: 1.5cm
-    right_margin: 1.5cm
-  typography:
-    font_size: 10pt
+  font_size: 10pt
+  page_numbering_style: none
+  margins:
+    top: 1.5cm
+    bottom: 1.5cm
+    left: 1.5cm
+    right: 1.5cm
