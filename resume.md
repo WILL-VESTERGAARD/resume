@@ -1,6 +1,6 @@
 # Alex Mercer
 **DevOps Engineer & Systems Architect**  
-📍 Melbourne, VIC | 📱 0400 000 000 | ✉️ alex.mercer@email.com | 🌐 [://linkedin.com](https://linkedin.com)
+Melbourne, VIC | Phone: 0400 000 000 | Email: alex.mercer@email.com | LinkedIn: [://linkedin.com](https://linkedin.com)
 
 ---
 
