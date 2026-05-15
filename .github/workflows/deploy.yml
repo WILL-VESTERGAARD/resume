@@ -35,10 +35,19 @@ jobs:
 
       - name: Prepare Assets for Static Web Hosting
         run: |
-          # RenderCV builds files inside a directory named "rendercv_output"
-          # Move the compiled assets into the root folder for deployment
           cp rendercv_output/Will_Vestergaard_CV.pdf ./resume.pdf
           cp rendercv_output/Will_Vestergaard_CV.html ./index.html
+          sed -i '/<\/head>/i \
+          <style>\
+            .actions-bar { max-width: 800px; margin: 2rem auto 0 auto; text-align: right; padding: 0 2rem; }\
+            .download-btn { background-color: #0076d6; color: white; padding: 0.6rem 1.2rem; text-decoration: none; border-radius: 4px; font-weight: bold; font-family: sans-serif; font-size: 0.9rem; display: inline-block; transition: background 0.2s ease; }\
+            .download-btn:hover { background-color: #00569d; }\
+            @media print { .actions-bar { display: none; } }\
+          </style>' index.html
+          sed -i '/<body>/a \
+          <div class="actions-bar">\
+            <a href="resume.pdf" class="download-btn" download>Download PDF Copy</a>\
+          </div>' index.html
 
       - name: Upload production assets to GitHub Pages
         uses: actions/upload-pages-artifact@v3
