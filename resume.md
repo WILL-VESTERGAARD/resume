@@ -1,3 +1,18 @@
+---
+geometry: "left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm"
+fontsize: 10pt
+header-includes:
+  - \usepackage{titlesec}
+  - \renewcommand{\familydefault}{\sfdefault}
+  - \titleformat{\section}{\large\bfseries\sffamily}{}{0em}{}[\titlerule]
+  - \titlespacing*{\section}{0pt}{10pt}{5pt} # Tightens spacing before and after H2 headings
+  - \setlist[itemize]{noitemsep, topsep=0pt} # Removes white space between bullet points
+---
+
+# Alex Mercer
+**DevOps Engineer & Systems Architect**  
+...
+
 # Alex Mercer
 **DevOps Engineer & Systems Architect**  
 Melbourne, VIC | Phone: 0400 000 000 | Email: alex.mercer@email.com | LinkedIn: [://linkedin.com](https://linkedin.com)
