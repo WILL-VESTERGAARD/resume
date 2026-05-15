@@ -1,4 +1,4 @@
-name: Build and Deploy Resume
+name: Build and Deploy RenderCV Resume
 
 on:
   push:
@@ -17,18 +17,27 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install Pandoc and LaTeX (for PDF generation)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install RenderCV and Dependencies
         run: |
+          pip install rendercv
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra texlive-plain-generic
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
 
-      - name: Convert Markdown to HTML Website
+      - name: Run RenderCV Compiler
         run: |
-          pandoc resume.md --template=template.html -o index.html
+          rendercv render resume.yaml
 
-      - name: Convert Markdown to PDF Document
+      - name: Prepare Assets for Static Web Hosting
         run: |
-          pandoc resume.md -o resume.pdf
+          # RenderCV builds files inside a directory named "rendercv_output"
+          # Move the compiled assets into the root folder for deployment
+          cp rendercv_output/Will_Vestergaard_CV.pdf ./resume.pdf
+          cp rendercv_output/Will_Vestergaard_CV.html ./index.html
 
       - name: Upload production assets to GitHub Pages
         uses: actions/upload-pages-artifact@v3
