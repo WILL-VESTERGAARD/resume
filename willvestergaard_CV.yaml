@@ -1,17 +1,13 @@
-# cv-language-server: $schema=https://githubusercontent.com
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/heads/main/schema.json
 
 cv:
   name: Will Vestergaard
-  label: Electrical Automation Technician
   location: Melbourne, VIC
   phone: "+61 408 183 261"
   email: willvestergaard@gmail.com
-  links:
-    - label: LinkedIn
-      url: https://linkedin.com
-
-  summary: >
-    I’m an automation technician with a passion for electronics and mechanical systems. I have a keen interest in programming, circuit design, and mechatronics. In my downtime, you might find me producing music or taking photos.
+  social_networks:
+    - network: LinkedIn
+      username: will-vestergaard
 
   sections:
     employment_history:
@@ -62,31 +58,16 @@ cv:
         end_date: 2021-12
 
     training:
-      - label: "**EWP Under 11m**"
-        details: "*Operate elevating work platform* (Pinnacle Safety and Training - March 2026)"
-      - label: "**Height Safety Supervisor**"
-        details: "*Conduct local risk control, Work safely at heights* (Pinnacle Safety and Training - March 2026)"
-      - label: "**First Aid**"
-        details: "*Provide Cardiopulmonary Resuscitation, Provide Basic Emergency Life Support, Provide First Aid* (Pinnacle Safety and Training - March 2026)"
-      - label: "**Low Voltage Rescue and CPR**"
-        details: "*Perform resuce from a live low voltage panel* (Pinnacle Safety and Training - March 2026)"
+      - bullet: "**EWP Under 11m** - *Operate elevating work platform* (Pinnacle Safety and Training - March 2026)"
+      - bullet: "**Height Safety Supervisor** - *Conduct local risk control, Work safely at heights* (Pinnacle Safety and Training - March 2026)"
+      - bullet: "**First Aid** - *Provide Cardiopulmonary Resuscitation, Provide Basic Emergency Life Support, Provide First Aid* (Pinnacle Safety and Training - March 2026)"
+      - bullet: "**Low Voltage Rescue and CPR** - *Perform resuce from a live low voltage panel* (Pinnacle Safety and Training - March 2026)"
 
     certifications:
-      - label: "**Driver's Licence**"
-        details: "*Valid in Victoria, Car type* (VicRoads)."
-      - label: "**High Risk Work Licence**"
-        details: "(WorkSafe Victoria).\n* **LF** *(Forklift truck operation)*."
-      - label: "**Construction Induction Training (White Card)**"
-        details: "(WorkSafe Victoria - March 2026)"
-      - label: "**Working with Children Check**"
-        details: "*Valid in Victoria, Employee type* (Service Victoria - February 2022)."
+      - bullet: "**Driver's Licence** - *Valid in Victoria, Car type* (VicRoads)."
+      - bullet: "**High Risk Work Licence** - (WorkSafe Victoria). \n* **LF** *(Forklift truck operation)*."
+      - bullet: "**Construction Induction Training (White Card)** - (WorkSafe Victoria - March 2026)"
+      - bullet: "**Working with Children Check** - *Valid in Victoria, Employee type* (Service Victoria - February 2022)."
 
 design:
   theme: engineeringresumes
-  font_size: 10pt
-  page_numbering_style: none
-  margins:
-    top: 1.5cm
-    bottom: 1.5cm
-    left: 1.5cm
-    right: 1.5cm

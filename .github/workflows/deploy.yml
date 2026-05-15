@@ -31,7 +31,7 @@ jobs:
 
       - name: Run RenderCV Compiler
         run: |
-          rendercv render resume.yaml
+          rendercv render willvestergaard_CV.yaml
 
       - name: Prepare Assets for Static Web Hosting
         run: |
